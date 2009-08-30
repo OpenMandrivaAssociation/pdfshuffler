@@ -19,12 +19,22 @@ Requires:	pygtk2
 Requires:	python-pypdf
 Requires:	python-pypoppler
 
-
 %description
 PDF-Shuffler is a small python-gtk application, which helps the user
 to merge or split pdf documents and rotate, crop and rearrange their
 pages using an interactive and intuitive graphical interface.
 
+%files -f %{name}.lang
+%defattr(-,root,root,-)
+%doc AUTHORS ChangeLog COPYING README TODO
+%{_bindir}/%{name}
+%{_datadir}/applications/%{name}.desktop
+%{_mandir}/man1/%{name}.1.*
+%{_datadir}/pixmaps/%{name}.png
+%{_datadir}/pixmaps/%{name}.svg
+%{py_puresitedir}/%{name}-*.egg-info
+
+#--------------------------------------------------------------------
 
 %prep
 %setup -q
@@ -38,14 +48,3 @@ pages using an interactive and intuitive graphical interface.
 
 %clean
 %__rm -rf %{buildroot}
-
-%files -f %{name}.lang
-%defattr(-,root,root,-)
-%doc AUTHORS ChangeLog COPYING README TODO
-%{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
-%{_mandir}/man1/%{name}.1.*
-%{_datadir}/pixmaps/%{name}.png
-%{_datadir}/pixmaps/%{name}.svg
-%{py_puresitedir}/%{name}-*.egg-info
-
