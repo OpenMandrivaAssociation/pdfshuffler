@@ -1,5 +1,5 @@
 Name:		pdfshuffler
-Version:	0.5
+Version:	0.5.1
 Release:	%mkrel 1
 Summary:	PDF file merging, rearranging, and splitting
 Group:		Publishing
