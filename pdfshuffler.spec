@@ -1,6 +1,6 @@
 Name:		pdfshuffler
 Version:	0.5.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	PDF file merging, rearranging, and splitting
 Group:		Publishing
 License:	GPLv2+
@@ -10,7 +10,7 @@ Patch0:		pdfshuffler-0.5-fix-desktop.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 
-%py_requires -d
+BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	gettext
 
@@ -31,7 +31,7 @@ pages using an interactive and intuitive graphical interface.
 %{_mandir}/man1/%{name}.1.*
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/pixmaps/%{name}.svg
-%{py_puresitedir}/%{name}-*.egg-info
+%{py_puresitedir}/%{name}-py%{pyver}.egg-info
 
 #--------------------------------------------------------------------
 
