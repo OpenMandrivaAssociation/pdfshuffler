@@ -31,7 +31,7 @@ pages using an interactive and intuitive graphical interface.
 %{_mandir}/man1/%{name}.1.*
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/pixmaps/%{name}.svg
-%{py_puresitedir}/%{name}-%{version}-py%{pyver}.egg-info
+%{py_puresitedir}/%{name}-0.5-py%{pyver}.egg-info
 
 #--------------------------------------------------------------------
 
