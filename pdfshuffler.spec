@@ -1,6 +1,6 @@
 Name:		pdfshuffler
 Version:	0.5.1
-Release:	%mkrel 2
+Release:	3
 Summary:	PDF file merging, rearranging, and splitting
 Group:		Publishing
 License:	GPLv2+
@@ -31,7 +31,7 @@ pages using an interactive and intuitive graphical interface.
 %{_mandir}/man1/%{name}.1.*
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/pixmaps/%{name}.svg
-%{py_puresitedir}/%{name}-0.5-py%{pyver}.egg-info
+%{py_puresitedir}/%{name}-0.5-py%{py_ver}.egg-info
 
 #--------------------------------------------------------------------
 
