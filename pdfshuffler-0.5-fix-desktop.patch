@@ -1,0 +1,16 @@
+diff -Naur data.orig/pdfshuffler.desktop data/pdfshuffler.desktop
+--- data.orig/pdfshuffler.desktop	2009-04-20 13:53:03.000000000 +0200
++++ data/pdfshuffler.desktop	2009-08-16 20:44:25.000000000 +0200
+@@ -3,8 +3,10 @@
+ Name=PDF-Shuffler
+ Comment=PDF Merging, Rearranging, Splitting, Rotating and Cropping
+ Type=Application
+-Exec=pdfshuffler
++Exec=pdfshuffler %F
+ Icon=pdfshuffler
+-Categories=Office;
++Categories=GTK;Office;
++MimeType=application/pdf;
+ Terminal=false
+ StartupNotify=false
++InitialPreference=7
