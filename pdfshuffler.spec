@@ -30,8 +30,8 @@ pages using an interactive and intuitive graphical interface.
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/%{name}/%{name}.ui
 %{_datadir}/%{name}/icons/hicolor/scalable/%{name}.svg
-%{py_puresitedir}/%{name}-0.6.0-py*.egg-info
-%{py_sitedir}/pdfshuffler/
+%{py2_puresitedir}/%{name}-0.6.0-py*.egg-info
+%{py2_sitedir}/pdfshuffler/
 
 #--------------------------------------------------------------------
 
@@ -40,7 +40,7 @@ pages using an interactive and intuitive graphical interface.
 %patch0 -p0
 
 %install
-python setup.py install --root %{buildroot} --no-compile
+python2 setup.py install --root %{buildroot} --no-compile
 %find_lang %{name}
 
 
