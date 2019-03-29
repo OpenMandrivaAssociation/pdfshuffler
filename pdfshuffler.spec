@@ -1,6 +1,6 @@
 Name:		pdfshuffler
 Version:	0.6.0
-Release:	3
+Release:	4
 Summary:	PDF file merging, rearranging, and splitting
 Group:		Publishing
 License:	GPLv2+
@@ -9,8 +9,8 @@ Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		pdfshuffler-0.5-fix-desktop.patch
 BuildArch:	noarch
 
-BuildRequires:	python-devel
-BuildRequires:	python-setuptools
+BuildRequires:	python2-devel
+BuildRequires:	python2-setuptools
 BuildRequires:	gettext
 
 Requires:	pygtk2
