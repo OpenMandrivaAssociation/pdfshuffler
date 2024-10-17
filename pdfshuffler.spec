@@ -4,7 +4,7 @@ Release:	4
 Summary:	PDF file merging, rearranging, and splitting
 Group:		Publishing
 License:	GPLv2+
-URL:		http://sourceforge.net/projects/pdfshuffler/
+URL:		https://sourceforge.net/projects/pdfshuffler/
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		pdfshuffler-0.5-fix-desktop.patch
 BuildArch:	noarch
